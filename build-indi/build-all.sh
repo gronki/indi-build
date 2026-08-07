@@ -1,6 +1,6 @@
 set -e
 
-sudo rm -rf /opt/indi
+#sudo rm -rf /opt/indi
 
 bash build-core.sh
 
@@ -12,6 +12,9 @@ bash build-component.sh indi-asi
 
 bash build-component.sh libplayerone
 bash build-component.sh indi-playerone
+
+bash build-component.sh libqhy
+bash build-component.sh indi-qhy
 
 bash build-component.sh libaltaircam
 bash build-component.sh libtoupcam

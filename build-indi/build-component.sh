@@ -9,16 +9,16 @@ if [ ! -d "indi-3rdparty/$COMPONENT_NAME" ]; then
 	exit 1
 fi
 
-rm -rf "build/3rdparty/$COMPONENT_NAME"
+#rm -rf "build/3rdparty/$COMPONENT_NAME"
 mkdir -p "build/3rdparty/$COMPONENT_NAME"
 cd "build/3rdparty/$COMPONENT_NAME"
 
 export CMAKE_PREFIX_PATH=/opt/indi
 
 cmake -DCMAKE_INSTALL_PREFIX=/opt/indi \
-        -DCMAKE_C_FLAGS="-O1 -g1 -march=native" \
-        -DCMAKE_CXX_FLAGS="-O1 -g1 -march=native" \
-        -DCMAKE_Fortran_FLAGS="-O1 -g1 -march=native" \
+        -DCMAKE_C_FLAGS="-O1 -g1" \
+        -DCMAKE_CXX_FLAGS="-O1 -g1" \
+        -DCMAKE_Fortran_FLAGS="-O1 -g1" \
 	"$@" "../../../indi-3rdparty/$COMPONENT_NAME"
-cmake --build . -j4
+cmake --build . -j $(nproc)
 sudo cmake --install .
