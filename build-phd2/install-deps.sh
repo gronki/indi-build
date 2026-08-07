@@ -1,0 +1,1 @@
+sudo apt-get install --no-install-recommends build-essential git cmake pkg-config libwxgtk3.2-dev    wx-common wx3.2-i18n libnova-dev gettext zlib1g-dev libx11-dev    libcurl4-gnutls-dev libopencv-dev libeigen3-dev libgtest-dev
