@@ -5,7 +5,7 @@
 - ``build-all.sh`` - edit which plugins are needed and run
 - ``systemctl --user mask gvfs-gphoto2-volume-monitor.service``
 - ``systemctl --user stop gvfs-gphoto2-volume-monitor.service``
-- to run, use ``run_indi.sh``
+- to run, use ``indi-run.sh``
 
 location: `/opt/indi`
 
@@ -13,7 +13,7 @@ location: `/opt/indi`
 
 - ``install-deps.sh``
 - ``clone.sh``
-- ``build.sh`` - edit which plugins are needed and run
-- to run, use ``run_phd2.sh``
+- ``build.sh``
+- to run, use ``phd2-run.sh``
 
 location: `/opt/phd2`
