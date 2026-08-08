@@ -1,1 +1,1 @@
-sudo apt-get install -y libahp-gt-dev cmake-extras libgmock-dev gcc g++ cmake git libev-dev libnova-dev libusb-1.0-0-dev libcurl4-openssl-dev libgsl-dev libjpeg9-dev libfftw3-dev libcfitsio-dev libraw-dev libgphoto2-dev
+sudo apt-get install -y libahp-gt-dev cmake-extras libgmock-dev gcc g++ cmake git libev-dev libnova-dev libusb-1.0-0-dev libcurl4-openssl-dev libgsl-dev libjpeg9-dev libfftw3-dev libcfitsio-dev libraw-dev libgphoto2-dev fxload 
